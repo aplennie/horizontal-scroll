@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<meta content="width=device-width, height =device-height, initial-scale=1" name="viewport">
+</head>
+
+<body>
+  <div class="topnav">
+  <h3 id="test-1">Home</h3>
+  <h3 id="test-2">News</h3>
+  <h3 id="test-3">Contact</h3>
+  <h3 id="test-4">About</h3>
+</div>
+  <div class="horizontal-area">
+    <div class="grid-container">
+      <div class="single-box" id="box-1">
+        <div>
+            <img src="https://images.pexels.com/photos/509922/pexels-photo-509922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        </div>
+        <div>
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+        </div>
+        <div>
+          <button class="button">Click here</button>
+        </div>
+      </div>
+      <div class="single-box" id="box-2">
+       <p>NEWS</p>
+      </div>
+      <div class="single-box" id="box-3">
+       <p>This is a div.</p>
+      </div>
+      <div class="single-box" id="box-4">
+       <p>CONTACT</p>
+      </div>
+      <div class="single-box" id="box-5">
+       <p>This is a div.</p>
+      </div>
+      <div class="single-box" id="box-6">
+       <p>This is a div.</p>
+      </div>
+      <div class="single-box" id="box-7">
+       <p>ABOUT</p>
+      </div>
+      <div class="single-box" id="box-8">
+       <p>This is a div.</p>
+      </div>
+      
+
+    </div>
+  </div>
+  <footer class="footer"> This is a Footer © 2018 </footer>
+  <script type="text/javascript">
+
+// http://www.dte.web.id/2013/02/event-mouse-wheel.html
+
+(function() {
+    function scrollHorizontally(e) {
+        e = window.event || e;
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        document.documentElement.scrollLeft -= (delta*40); // Multiplied by 40
+        document.body.scrollLeft -= (delta*40); // Multiplied by 40
+        e.preventDefault();
+    }
+    if (window.addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        window.addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+        // IE 6/7/8
+        window.attachEvent("onmousewheel", scrollHorizontally);
+    }
+})();
+
+</script>
+</body>
+
+</html>
